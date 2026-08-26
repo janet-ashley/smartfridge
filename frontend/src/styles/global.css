@@ -1,0 +1,99 @@
+:root {
+  --primary: #4CAF50;
+  --background: #F9F9F9;
+  --text: #1E1E1E;
+  --text-secondary: #757575;
+
+  --card-radius: 16px;
+  --big-radius: 24px;
+
+  --shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+body {
+  margin: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--background);
+  color: var(--text);
+}
+.app {
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 16px;
+  background: var(--background);
+}
+.card {
+  background: white;
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow);
+  padding: 14px;
+  margin-bottom: 12px;
+}
+.button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.button-outline {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 14px;
+  border-radius: 20px;
+}
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge.ok {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.badge.soon {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+.badge.expired {
+  background: #ffebee;
+  color: #c62828;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+.fab {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
